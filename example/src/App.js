@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import MultipleDatePicker from "react-multiple-datepicker";
+import MultipleDatePicker from "../../lib/components/Datepicker";
 
 class App extends Component {
   render() {

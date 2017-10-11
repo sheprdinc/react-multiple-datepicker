@@ -20,8 +20,10 @@ var StyledDiv = _styledComponents.default.div(_templateObject);
 
 var StyledSpan = _styledComponents.default.span(_templateObject2);
 
+console.log("HSDKFJSDF");
+
 var WeekHeader = function WeekHeader() {
-  return _react.default.createElement(StyledDiv, null, _react.default.createElement(StyledSpan, null, "S"), _react.default.createElement(StyledSpan, null, "M"), _react.default.createElement(StyledSpan, null, "T"), _react.default.createElement(StyledSpan, null, "W"), _react.default.createElement(StyledSpan, null, "T"), _react.default.createElement(StyledSpan, null, "F"), _react.default.createElement(StyledSpan, null, "S"));
+  return _react.default.createElement(StyledDiv, null, _react.default.createElement(StyledSpan, null, "S"), _react.default.createElement(StyledSpan, null, "S"), _react.default.createElement(StyledSpan, null, "M"), _react.default.createElement(StyledSpan, null, "T"), _react.default.createElement(StyledSpan, null, "W"), _react.default.createElement(StyledSpan, null, "T"), _react.default.createElement(StyledSpan, null, "F"));
 };
 
 var _default = WeekHeader;
