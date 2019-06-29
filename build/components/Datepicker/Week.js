@@ -85,8 +85,9 @@ function (_Component) {
       if (!_this.isDisabled(day)) _this.props.onSelect(day);
     }, _this.isDisabled = function (day) {
       var minDate = _this.props.minDate,
-          maxDate = _this.props.maxDate;
-      return minDate && _utils.default.isBefore(day, minDate) || maxDate && _utils.default.isAfter(day, maxDate);
+          maxDate = _this.props.maxDate,
+          disabledDates = _this.props.disabledDates;
+      return minDate && _utils.default.isBefore(day, minDate) || maxDate && _utils.default.isAfter(day, maxDate) || disabledDates && _utils.default.dateIn(disabledDates, day);
     }, _this.isSelected = function (day) {
       return _this.props.selectedDates && _utils.default.dateIn(_this.props.selectedDates, day);
     }, _temp));

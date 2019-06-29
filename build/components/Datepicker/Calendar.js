@@ -147,6 +147,7 @@ function (_Component) {
         displayDate: this.state.displayDate,
         key: this.state.displayDate.toDateString(),
         selectedDates: this.props.selectedDates,
+        disabledDates: this.props.disabledDates,
         minDate: this.getMinDate(),
         maxDate: this.getMaxDate(),
         onSelect: this.props.onSelect,

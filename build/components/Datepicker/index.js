@@ -66,6 +66,7 @@ function (_Component) {
 
     _this.onSelect = function (day) {
       var selectedDates = _this.state.selectedDates;
+      var disabledDates = _this.props.disabledDates || [];
 
       if (_utils.default.dateIn(selectedDates, day)) {
         _this.setState({
@@ -73,7 +74,7 @@ function (_Component) {
             return !_utils.default.isSameDay(date, day);
           })
         });
-      } else {
+      } else if (!_utils.default.dateIn(disabledDates, day)) {
         _this.setState({
           selectedDates: [].concat(_toConsumableArray(selectedDates), [day])
         });
@@ -157,6 +158,7 @@ function (_Component) {
         selected: this.state.selected,
         selectedDates: this.state.selectedDates,
         onSelect: this.onSelect,
+        disabledDates: this.props.disabledDates,
         minDate: this.props.minDate,
         maxDate: this.props.maxDate,
         onCancel: this.handleCancel,

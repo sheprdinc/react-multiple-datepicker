@@ -61,6 +61,7 @@ function (_Component) {
           selected: _this.props.selected,
           selectedDates: _this.props.selectedDates,
           onSelect: _this.props.onSelect,
+          disabledDates: _this.props.disabledDates,
           minDate: _this.props.minDate,
           maxDate: _this.props.maxDate
         });
